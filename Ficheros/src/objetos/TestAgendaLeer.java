@@ -7,7 +7,7 @@ public class TestAgendaLeer {
 
 	public static void main(String[] args){
 		
-		String nombreFichero = "src//secuenciales//objetos//agenda.dat";
+		String nombreFichero = "src//objetos//agenda.dat";
 		
 		try{
 			  FileInputStream fis = new FileInputStream(nombreFichero);

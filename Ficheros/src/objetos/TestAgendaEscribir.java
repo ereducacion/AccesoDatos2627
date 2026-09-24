@@ -7,7 +7,7 @@ public class TestAgendaEscribir {
 
 	public static void main(String[] args){
 		
-		String nombreFichero = "src//secuenciales//objetos//agenda.dat";
+		String nombreFichero = "src//objetos//agenda.dat";
 		
 		Agenda a1 = new Agenda("Ana", "Martínez", "Fernández");
 		Agenda a2 = new Agenda("Ernesto", "García", "Pérez");
