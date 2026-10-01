@@ -38,6 +38,9 @@ public class EscribeLeeFichAleatorio {
 
 			
 			System.out.println("He escrito");
+
+			System.out.println("El curso se ha quedado en la posicion " + ficheroAleatorio.getFilePointer());
+			System.out.println("El fichero tiene "+ ficheroAleatorio.length() + " bytes");
 			
 			// leer...
 			pos = 1; // vuelvo al inicio
@@ -48,14 +51,13 @@ public class EscribeLeeFichAleatorio {
 				nombre[i] = ficheroAleatorio.readChar();
 			}
 			System.out.println(nombre);
-			
-			System.out.println("El curso se ha quedado en la posicion " + ficheroAleatorio.getFilePointer());
+	
 						
 			ficheroAleatorio.seek(1);
-			int edad= ficheroAleatorio.readInt();
+			int edad= ficheroAleatorio.readInt(); // leo la edad de la primera persona
 			System.out.println(edad);
 			
-			ficheroAleatorio.seek(25);
+			ficheroAleatorio.skipBytes(tamagnoNombreMax*2); // salto los bytes del nombre para leer la siguiente edad
 			int edad2= ficheroAleatorio.readInt();
 			System.out.println(edad2);
 						
